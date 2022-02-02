@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register</title>
+    {{>header}}
+</head>
+<body>
+    <div class="register__container">
+        <h1>REGISTER</h1>
+        <form onsubmit="return validateForm()" action="/register" method="POST">
+           <input type="text" name="fullname" placeholder="Full Name">
+
+            <input type="text" id="username" name ="email" placeholder="Email" required>
+            <p class="register__error" id="user__error"></p>
+
+             <input type="number" name="phonenumber" placeholder="Phone Number">
+
+            <input type="password" name="pwd" id="pwd" placeholder="enter password">
+            <p class="register__error" id="pwd__error"></p>
+
+            <input type="password" id="confirmpwd" name="confirmpassword" placeholder="Confirm Password">
+             <p class="register__error" id="confirmpwd__error"></p>
+
+            <p>Already have an account? <a href="/login"> Login </a></p>
+
+            <div class="register__btn">
+            <a href="/" type="button" class="register__button">Register</a>
+            </div>
+        </form>
+        <p>By registering, you agree to the <a href="#"> Terms & Conditions </a> ,<a href="#"> Privacy Policy  </a>and <a href="#"> Email Policy</a></p>
+    </div>
+    <script>
+        let username = document.getElementById('username');
+        let flag = 1;
+        let pwds = document.getElementById('pwd');
+        const confirmpwd = document.getElementById("confirmpwd");
+        function validateForm(){
+            if(username.value.length < 3){
+               document.getElementById("user__error").innerHTML = " username should have more than 3 char";
+                return false;
+                flag = 0;
+            }
+            else if(pwds.value.length == 0){
+                document.getElementById("pwd__error").innerHTML = "Please enter password";
+                return false;
+                flag = 0;
+
+            }
+            else if(confirmpwd.value.length == 0){
+                document.getElementById("confirmpwd__error").innerHTML = " Please enter confirm password";
+                return false;
+                flag = 0;
+            }
+            else{
+                document.getElementById("user__error").innerHTML = "";
+                document.getElementById("pwd__error").innerHTML = "";
+                flag = 1;
+            }
+            
+
+        }
+
+    </script>
+    
+    {{!-- <h1 class="register__heading">This is register page</h1>
+    <form action="" method="POST">
+        <input type="text" name="fullname" placeholder="Full Name"><br>
+        <input type="email" name="email" placeholder="Email"><br>
+        <input type="number" name="phonenumber" placeholder="Phone Number"> <br>
+        <input type="password" name="password" placeholder="Password"> <br>
+        <input type="confirmpassword" name="confirmpassword" placeholder="Confirm Password">
+
+
+    </form> --}}
+    
+</body>
+</html>
