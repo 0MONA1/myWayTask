@@ -1,5 +1,5 @@
 <!-- Explanation of Assignment -->
-i am restricted to 50% of the given task due to time constraint and change in date.
+i am restricted to 50% of the given task due to time constraint and change in date. Snapshots are attached for flexibility as i couldnt host on heroku.
 
 i have created 3 working links
 1- link to login
