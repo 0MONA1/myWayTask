@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+/* general styling */
+body{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+*{
+    /* margin: 0; */
+    padding: 0;
+}
+
+a{
+    transition: color .3s ease;
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+.login__heading{
+    background-color: green;
+}
+.register__heading{
+    background-color: greenyellow;
+}
+.error__heading{
+    background-color: indianred;
+}
+
+
+
+/* Blog PAGE STYLING */
+.blog__one{
+    border: 2px solid green;
+    max-width: 370px;
+    border: 2px solid #cfbcbc;
+    border-radius: 2%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    margin: 0 2em;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 3em;
+
+}
+.blog__content{
+    text-align: left;
+    padding: 0 1em;
+}
+.timeLink{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.digitalLeader{
+   
+    border: 2px solid red;
+}
+
+
+
+
+/* REGISTER PAGE STYLING */
+.register__container{
+    width: 60%;
+    margin: 0 auto;
+    /* border: 2px solid gold; */
+    text-align: center;
+}
+.register__error{
+    color: red;
+}
+.register__btn{
+    width: 50%;
+    max-width: 600px;
+    border-radius: 5%;
+    padding: 0.4em 4em;
+    max-width: 600px;
+    margin: 0 auto;
+    display: inline-block;
+    background: rgb(60, 90, 95);
+
+    /* border: 2px solid green; */
+}
+.register__btn a{
+    color: #fff;
+    font-weight: 500;
+}
+
+input{
+    font-family: 'Open Sans', sans-serif;
+    width: 80%;
+    margin: 0 auto;
+    /* border: 2px solid tomato; */
+    background: #F7F7F7;
+    border: 1px solid #F7F7F7;
+    border-radius: 8%;
+    margin: 0.5em;
+    padding: 0.8em 2em;
+    max-width: 400px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* login page styling */
+.login__container{
+    width: 60%;
+    margin: 0 auto;
+    /* border: 2px solid gold; */
+    text-align: center;
+}
+.login__error{
+    color: red;
+}
+#login__btnnnn{
+    font-family: 'Open Sans', sans-serif;
+    background: rgb(60, 90, 95);
+    width: 100%;
+    max-width: 570px;
+    border-radius: 15%;
+    cursor: pointer;
+    color: #fff;
+    padding: 0.5em 3em;
+    line-height: 0.5;
+    letter-spacing: 0.1em;
+}
+.login__button a{
+    text-decoration: none;
+    /* border: 1px solid rgb(60, 90, 95) ; */
+
+}
+.login__button{
+    /* background: hotpink; */
+    width: 100%;
+    margin: 0 auto;
+    max-width: 350px;
+}
+.login__forgetPassword{
+   font-weight: lighter;
+   /* border: 2px solid green; */
+
+}
